@@ -30,7 +30,11 @@ let firstArray = [1,2,3,"four",[7,8,9]]; //Multiple values in one variable
 let arrayValue = fistArray[0]; //access 1 with index 
 let embededArray0 = fistArray[4][0] // access 7
 firstArray[0] = "uno"; // modify 
-firstArray.push(10,11); // push appeds multiple values at the end
+firstArray.push(10,11); // push appeds one or multiple values at the end
+firstArray.unshift(); // adds elements at the beguinning of the array
+firstArray.pop(); // removes the last element from an array. It can be stored in a varible 
+firstArray.shift(); // removes the first element from an array
+
 
 
 console.log(firstArray);
