@@ -31,10 +31,22 @@ let arrayValue = fistArray[0]; //access 1 with index
 let embededArray0 = fistArray[4][0] // access 7
 firstArray[0] = "uno"; // modify 
 firstArray.push(10,11); // push appeds one or multiple values at the end
-firstArray.unshift(); // adds elements at the beguinning of the array
+firstArray.unshift(0, 0,5); // adds elements at the beguinning of the array
 firstArray.pop(); // removes the last element from an array. It can be stored in a varible 
 firstArray.shift(); // removes the first element from an array
 
-
-
 console.log(firstArray);
+
+// Functions
+
+function firstFunction() {
+    console.log("this is the structure to create a function")
+}
+
+firstFunction();
+
+function suma(x, y){ //this are parameters of a function
+    console.log(x+y);
+}
+
+suma(1,2); // ths are the arguments
