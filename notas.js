@@ -46,7 +46,19 @@ function firstFunction() {
 firstFunction();
 
 function suma(x, y){ //this are parameters of a function
-    console.log(x+y);
+    let x = x; //Variables declared without "let, const" inside a function are created in the global scope
+    let y = y;
+    return x+y; // return es la salida de la funcion
 }
 
-suma(1,2); // ths are the arguments
+let suma1 = suma(1,2); // tihs are the arguments
+
+// scope of varibles
+const someVar = "Hat"; //global scope
+
+function myFun() {
+  const someVar = "Head"; //local scope
+  console.log(someVar);
+}
+myFun(); // returns local scope
+console.log(someVar) //returns global scope
