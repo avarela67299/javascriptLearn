@@ -15,6 +15,38 @@ const thirdVar = 5; //unique value
 
 //Operators
 
+// Arithmetic operators
+let sum = 5 + 3;          // Addition
+let difference = 10 - 4;  // Subtraction
+let product = 6 * 7;      // Multiplication
+let quotient = 20 / 5;    // Division
+let remainder = 9 % 4;    // Modulus
+let power = 2 ** 3;       // Exponentiation
+
+let a = 5;
+a++; // Increment: a is now 6
+a--; // Decrement: a is now 5
+
+// Compound assignment operators
+let b = 5;
+b += 3; // Addition assignment: b is now 8
+
+let c = 10;
+c -= 4; // Subtraction assignment: c is now 6
+
+let d = 7;
+d *= 2; // Multiplication assignment: d is now 14
+
+let e = 20;
+e /= 5; // Division assignment: e is now 4
+
+let f = 9;
+f %= 4; // Modulus assignment: f is now 1
+
+let g = 2;
+g **= 3; // Exponentiation assignment: g is now 8
+
+
 //Strings
 
 let myStr = "Alejo";
