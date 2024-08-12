@@ -1,8 +1,11 @@
-const someVar = "Hat";
-
-function myFun() {
-  const someVar = "Head";
-  console.log(someVar);
+function test(myCondition) {
+  if (myCondition) {
+    return "It was true";
+  }
+  else {
+    return "else"
+  }
+  return "It was false";
 }
-myFun();
-console.log(someVar)
+
+test(true);

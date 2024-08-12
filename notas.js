@@ -94,3 +94,16 @@ function myFun() {
 }
 myFun(); // returns local scope
 console.log(someVar) //returns global scope
+
+/* When Return is encounter:
+1. provides a Value
+2. Exits the Function */
+
+// If Else
+
+function test(myCondition) {
+  if (myCondition) {
+    return "It was true"; // if true, it exits the function here
+  }
+  return "It was false";
+}
