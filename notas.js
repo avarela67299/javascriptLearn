@@ -107,3 +107,21 @@ function test(myCondition) {
   }
   return "It was false";
 }
+
+
+// Boolean
+
+//comparison operators return booleans
+1==1; //(true) lose equality
+1=="1"; //(true) compares two values, but it ignores datatype by coercion
+
+1===1; //(true) strict equality
+1==="1"; //(false) keeps datatype
+
+1!=1; //(false) inequality
+1!="1"; //(false) ignores datatype
+1!==1; //(false) 
+1!=="1";//(true)
+
+
+typeof "3"; // returns a string with the datatype of the value

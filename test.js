@@ -1,11 +1,13 @@
-function test(myCondition) {
-  if (myCondition) {
-    return "It was true";
+function prueba (valor) {
+  if(valor === "10") {
+    console.log("es igual a 10");
+  }
+  else if (valor === 12) {
+    console.log("igual a 12");
   }
   else {
-    return "else"
+    console.log("nada");
   }
-  return "It was false";
 }
 
-test(true);
+console.log(typeof 2.2);
