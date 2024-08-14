@@ -128,4 +128,7 @@ function test(myCondition) {
 1 <= 2;
 1 >= 2;
 
+1 == 1 && 2==2; //(true) adn operator, both statements have to be true
+1== 1 || 2==2; // (true) or operator, one statement needs to me true
+
 typeof "3"; // returns a string with the datatype of the value
