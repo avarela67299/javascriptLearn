@@ -120,8 +120,12 @@ function test(myCondition) {
 
 1!=1; //(false) inequality
 1!="1"; //(false) ignores datatype
-1!==1; //(false) 
-1!=="1";//(true)
+1!==1; //(false)  strict inequality
+1!=="1";//(true) keeps datatype
 
+1 > "2"; //(false) This comparison operators will always convert data type.
+1 < "2"; //(true)
+1 <= 2;
+1 >= 2;
 
 typeof "3"; // returns a string with the datatype of the value
