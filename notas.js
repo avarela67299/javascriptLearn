@@ -104,8 +104,12 @@ console.log(someVar) //returns global scope
 function test(myCondition) {
   if (myCondition) {
     return "It was true"; // if true, it exits the function here
+  } else if (myCondition) {
+    return "Maybe";
+  } else {
+    return "It was false";
   }
-  return "It was false";
+  
 }
 
 
@@ -132,3 +136,32 @@ function test(myCondition) {
 1== 1 || 2==2; // (true) or operator, one statement needs to me true
 
 typeof "3"; // returns a string with the datatype of the value
+
+// Switch Statement
+
+/* 
+-Similar to if else, but the value to compare is written only one time.
+-it uses (===) so type and value must match
+-it continues to compare the following cases if "break" is not use after the case statement. 
+*/
+
+function caseInSwitch(val) { // This fuction will return a greek letter depending on the numeric value given.
+  let answer = "";
+  switch (val){
+    case 1: // if value === 1;
+      answer = "alpha";
+      break;
+    case 2: // if value === 2;
+      answer = "beta";
+      break;
+    case 3: // if value === 3;
+      answer = "gamma";
+      break;
+    case 4: // if value === 4;
+      answer = "delta";
+      break;
+    default: // else
+      answer = "invalid"; 
+  }
+  return answer;
+}
