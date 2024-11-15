@@ -176,3 +176,23 @@ switch (val) {
   case 4:
     result = "4 alone";
 }
+
+//Objects
+
+const person = {
+  name: "Alice",
+  age: 30,
+  greet: function() {
+    console.log("Hello, my name is " + this.name);
+  }
+};
+
+const perosonName = person.name; // access properties dot notation
+const personName = person["name"]; // bracket notation
+
+let accessVar = "name";
+const personName = person[accessVar]; // access with variables
+
+person.name = "Erica"// change property
+person.gender = "F"; // add property
+delete person.gender; // delete property
