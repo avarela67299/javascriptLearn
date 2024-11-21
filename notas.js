@@ -53,6 +53,7 @@ let myStr = "Alejo";
 let myStrL = myStr.length; //length
 let firstLetter = myStr[0]; //find first letter
 let myfistLetter = myStr[myStr.length - 1]; //find last letter
+let myName = `I am ${myString}`;  //variable interpolation using backticks
 
 console.log(myStrL);
 
@@ -98,6 +99,40 @@ console.log(someVar) //returns global scope
 /* When Return is encounter:
 1. provides a Value
 2. Exits the Function */
+
+// Arrow Functions
+
+//is good for simple functions (parameters) => some code;
+
+function helloDeclaration(){          //Function Declaration
+  console.log("hello");
+}
+
+const helloExpresion = function(){console.log("hello")};  //Function Expression
+
+let helloArrow = () => console.log("hello"); // no need for return statement, it is implicit, if using curly braces, and no return, function returns undefined
+
+let helloArrowP = (name, age) => {console.log(`hello ${name}`); console.log(`you are ${age} age years  old`)}; //more than 2 lines need to be inside the curly braces
+/* Whe you use parethesis after a callback function it is invoked when the element is redered
+<button onClick={handleClick()}>Click Me</button>
+to avoid this you nee to reference it instead of calling it removing the parenthesis
+<button onClick={handleClick}>Click Me</button>
+if you have parameters, you need to use an arrow functio
+<button onClick={() => handleClick(name)}>Click Me</button>
+
+*/
+//other example
+//1. unsing function declaration and referencing callback
+function declaracion(){
+  console.log("hello");
+}
+setTimeout (hello, 3000); //reference instead of calling so it is render at the right moment
+
+//2 Using a function expresion
+setTimeout (function(){console.log("hello")}, 3000); //no need no name, is anonymus function
+
+//3 Using arrow function
+setTimeout (() => console.log("hello"), 3000);
 
 // If Else
 
@@ -191,7 +226,7 @@ const perosonName = person.name; // access properties dot notation
 const personName = person["name"]; // bracket notation
 
 let accessVar = "name";
-const personName = person[accessVar]; // access with variables
+personName = person[accessVar]; // access with variables
 
 person.name = "Erica"// change property
 person.gender = "F"; // add property
