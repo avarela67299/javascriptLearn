@@ -231,3 +231,45 @@ personName = person[accessVar]; // access with variables
 person.name = "Erica"// change property
 person.gender = "F"; // add property
 delete person.gender; // delete property
+
+// React Hook
+//special function that allows functional components to use react features on function base components(useState, useEffect, useReducer)
+//useState(): allows the creation of a stateful variable an a setter function to update its value in the virtual DOM [name, setName]
+//useState must be use outside the return statement of the component
+
+//Imports in React
+//     variable name that you asign, it can be anything; from "This specifies the module you're importing from."
+import React from "./react";
+import EverithingFromReact from "react"; //works too
+//To import named exports In another module (module2.js):
+export const myVariable = 42;
+export function myFunction() {
+  console.log("I'm a named export!");
+}
+//to import it
+import { myVariable, myFunction } from './module2.js';
+
+import React, { useState as importedUseState } from "react"; //React, defoult export; You cannot rename them without using the "as" keyword
+//or
+import React from "react"; // Default export 
+import { useState } from "react"; // Named export
+
+//Array distructuring
+// extracts values from an array and assign them to variables
+const numbers = [1, 2, 3];
+const [first, second, third] = numbers; //[first, second, third]) is the destructuring pattern
+console.log(first);  // 1
+console.log(second); // 2
+console.log(third);  // 3
+const numbers2 = [1, 2, 3, 4];
+const [first2, , third2] = numbers2; // skip elements
+//extract values from functions
+function getNumbers() {
+  return [1, 2, 3];
+}
+
+const [a1, b2, c3] = getNumbers();
+
+console.log(a1); // 1
+console.log(b2); // 2
+console.log(c3); // 3
