@@ -112,7 +112,7 @@ const helloExpresion = function(){console.log("hello")};  //Function Expression
 
 let helloArrow = () => console.log("hello"); // no need for return statement, it is implicit, if using curly braces, and no return, function returns undefined
 
-let helloArrowP = (name, age) => {console.log(`hello ${name}`); console.log(`you are ${age} age years  old`)}; //more than 2 lines need to be inside the curly braces
+let helloArrowP = (name, age) => {console.log(`hello ${name}`); console.log(`you are ${age} age years  old`)}; //more than 2 lines need to be inside the curly braces, and you explicitly need to declare the return
 /* Whe you use parethesis after a callback function it is invoked when the element is redered
 <button onClick={handleClick()}>Click Me</button>
 to avoid this you nee to reference it instead of calling it removing the parenthesis
